@@ -5,10 +5,9 @@
     <classes>
       <class name="com.test.java.LogIn">
         <methods>
-          <include name="LogInwithAccountNumberandPassword"/>
           <include name="beforeTest"/>
           <include name="beforeSuite"/>
-          <include name="LaunchApplication"/>
+          <include name="Addproduct"/>
           <include name="afterTest"/>
           <include name="afterSuite"/>
         </methods>

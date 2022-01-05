@@ -1,40 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-05T09:15:58 IST" name="Default suite" finished-at="2022-01-05T09:16:20 IST" duration-ms="21830">
+  <suite started-at="2022-01-05T16:22:18 IST" name="Default suite" finished-at="2022-01-05T16:24:11 IST" duration-ms="112513">
     <groups>
     </groups>
-    <test started-at="2022-01-05T09:15:58 IST" name="Default test" finished-at="2022-01-05T09:16:20 IST" duration-ms="21830">
+    <test started-at="2022-01-05T16:22:18 IST" name="Default test" finished-at="2022-01-05T16:24:11 IST" duration-ms="112513">
       <class name="com.test.java.LogIn">
-        <test-method is-config="true" signature="beforeSuite(org.testng.ITestContext)[pri:0, instance:com.test.java.LogIn@4145bad8]" started-at="2022-01-05T09:15:57 IST" name="beforeSuite" finished-at="2022-01-05T09:15:58 IST" duration-ms="797" status="PASS">
+        <test-method is-config="true" signature="beforeSuite(org.testng.ITestContext)[pri:0, instance:com.test.java.LogIn@2a7f1f10]" started-at="2022-01-05T16:22:18 IST" name="beforeSuite" finished-at="2022-01-05T16:22:18 IST" duration-ms="879" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@4860827a]]>
+                <![CDATA[org.testng.TestRunner@28f4f300]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.test.java.LogIn@4145bad8]" started-at="2022-01-05T09:15:58 IST" name="beforeTest" finished-at="2022-01-05T09:16:05 IST" duration-ms="6948" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.test.java.LogIn@2a7f1f10]" started-at="2022-01-05T16:22:18 IST" name="beforeTest" finished-at="2022-01-05T16:22:26 IST" duration-ms="7631" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="LaunchApplication()[pri:1, instance:com.test.java.LogIn@4145bad8]" started-at="2022-01-05T09:16:05 IST" name="LaunchApplication" description="Launch Application Homepage" finished-at="2022-01-05T09:16:09 IST" duration-ms="4285" status="PASS">
+        <test-method signature="LaunchApplication()[pri:1, instance:com.test.java.LogIn@2a7f1f10]" started-at="2022-01-05T16:22:26 IST" name="LaunchApplication" description="Launch Application Homepage" finished-at="2022-01-05T16:22:47 IST" duration-ms="20663" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchApplication -->
-        <test-method signature="LogInwithAccountNumberandPassword()[pri:2, instance:com.test.java.LogIn@4145bad8]" started-at="2022-01-05T09:16:09 IST" name="LogInwithAccountNumberandPassword" description="Login" finished-at="2022-01-05T09:16:16 IST" duration-ms="6616" status="PASS">
+        <test-method signature="LogInwithAccountNumberandPassword()[pri:2, instance:com.test.java.LogIn@2a7f1f10]" started-at="2022-01-05T16:22:47 IST" name="LogInwithAccountNumberandPassword" description="Login" finished-at="2022-01-05T16:23:06 IST" duration-ms="18898" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogInwithAccountNumberandPassword -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.test.java.LogIn@4145bad8]" started-at="2022-01-05T09:16:16 IST" name="afterTest" finished-at="2022-01-05T09:16:20 IST" duration-ms="3932" status="PASS">
+        <test-method signature="SearchSKU()[pri:3, instance:com.test.java.LogIn@2a7f1f10]" started-at="2022-01-05T16:23:06 IST" name="SearchSKU" description="Search SKU" finished-at="2022-01-05T16:23:16 IST" duration-ms="10496" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchSKU -->
+        <test-method signature="Addproduct()[pri:4, instance:com.test.java.LogIn@2a7f1f10]" started-at="2022-01-05T16:23:16 IST" name="Addproduct" description="Add product" finished-at="2022-01-05T16:23:27 IST" duration-ms="10388" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Addproduct -->
+        <test-method signature="Clickminicart()[pri:5, instance:com.test.java.LogIn@2a7f1f10]" started-at="2022-01-05T16:23:27 IST" name="Clickminicart" description="Click Mini Cart" finished-at="2022-01-05T16:23:41 IST" duration-ms="14876" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Clickminicart -->
+        <test-method signature="ProceedtoCheckout()[pri:6, instance:com.test.java.LogIn@2a7f1f10]" started-at="2022-01-05T16:23:41 IST" name="ProceedtoCheckout" description="Click proceed to checkoutr in shopping cart" finished-at="2022-01-05T16:23:55 IST" duration-ms="13595" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProceedtoCheckout -->
+        <test-method signature="PlaceOrder()[pri:7, instance:com.test.java.LogIn@2a7f1f10]" started-at="2022-01-05T16:23:55 IST" name="PlaceOrder" description="Place order" finished-at="2022-01-05T16:24:08 IST" duration-ms="12869" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PlaceOrder -->
+        <test-method signature="GetOrderNumber()[pri:8, instance:com.test.java.LogIn@2a7f1f10]" started-at="2022-01-05T16:24:08 IST" name="GetOrderNumber" description="Get order" finished-at="2022-01-05T16:24:08 IST" duration-ms="134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetOrderNumber -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.test.java.LogIn@2a7f1f10]" started-at="2022-01-05T16:24:08 IST" name="afterTest" finished-at="2022-01-05T16:24:11 IST" duration-ms="2903" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.test.java.LogIn@4145bad8]" started-at="2022-01-05T09:16:20 IST" name="afterSuite" finished-at="2022-01-05T09:16:21 IST" duration-ms="1539" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.test.java.LogIn@2a7f1f10]" started-at="2022-01-05T16:24:11 IST" name="afterSuite" finished-at="2022-01-05T16:24:13 IST" duration-ms="1542" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->

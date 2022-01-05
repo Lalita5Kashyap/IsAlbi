@@ -19,6 +19,7 @@ public class LogInPage extends Multimaplibraries {
 		getTestData(IsAlbiConstants.TestData, className);
 		final String url = getTestDataCellValue(TestCase, "URL");
 		BrowserActions.isNavigate(url);
+		BrowserActions.isSleep();
 	}
 
 	public static void SFLogin(String TestCase) {
@@ -29,11 +30,27 @@ public class LogInPage extends Multimaplibraries {
 		final String password = getTestDataCellValue(TestCase, "Password");
 		BrowserActions.isSetValue(HomePageObjects.username, username);
 		BrowserActions.isSetValue(HomePageObjects.password, password);
+		BrowserActions.isClick(HomePageObjects.siginbutton);
+		BrowserActions.isSleep();
 	}
-	
+
 	public static void SearchProductSKU(String TestCase) {
 		getTestData(IsAlbiConstants.TestData, className);
 		final String productsku = getTestDataCellValue(TestCase, "Product SKU");
 		BrowserActions.isSetValue(HomePageObjects.productsku, productsku);
+		BrowserActions.pressEnter(HomePageObjects.productsku);
+		BrowserActions.isSleep();
 	}
+
+	public static void Addproductincart() {
+		BrowserActions.isClick(HomePageObjects.addtocartbutton);
+		BrowserActions.isSleep();
+	}
+
+	public static void ClickonMiniCart() {
+		BrowserActions.isClick(HomePageObjects.minicarticon);
+		BrowserActions.isClick(HomePageObjects.vieweditcart);
+		BrowserActions.isSleep();
+	}
+
 }
