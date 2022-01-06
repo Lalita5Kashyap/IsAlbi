@@ -15,7 +15,7 @@ import com.onestop.isalbi.pages.ShoppingCartPage;
  * @author Lalita Kashyap
  *
  */
-public class LogIn extends BaseTest {
+public class NonProformaCheckout extends BaseTest {
 
 	@Test(testName = "TC000 - Launch Application", description = "Launch Application Homepage", priority = 1)
 	public void LaunchApplication() {
