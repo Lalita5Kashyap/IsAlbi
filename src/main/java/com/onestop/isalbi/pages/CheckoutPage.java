@@ -1,14 +1,29 @@
 package com.onestop.isalbi.pages;
 
 import com.onestop.isalbi.base.BrowserActions;
+import com.onestop.isalbi.base.Multimaplibraries;
+import com.onestop.isalbi.config.IsAlbiConstants;
 import com.onestop.isalbi.objects.CheckoutPageObjects;
 
 
-public class CheckoutPage {
-	
+
+public class CheckoutPage extends Multimaplibraries {
+	static String className = LogInPage.class.getSimpleName();
+
 	public static void PlaceOrder() {
 		BrowserActions.isClick(CheckoutPageObjects.customcondition);
 		BrowserActions.isClick(CheckoutPageObjects.placeorderbutton);
 		BrowserActions.isSleep();
-}
+	}
+	
+	public static void FillCCDetails(String TestCase) {
+		getTestData(IsAlbiConstants.TestData, className);
+		final String CardNumber = getTestDataCellValue(TestCase, "Card Number");
+		final String ExpiryDate = getTestDataCellValue(TestCase, "Expiry Date");
+		final String cvc = getTestDataCellValue(TestCase, "CVC");
+		BrowserActions.isSetValue(CheckoutPageObjects.cardnumber, CardNumber);
+		BrowserActions.isSetValue(CheckoutPageObjects.expirydate, ExpiryDate);
+		BrowserActions.isSetValue(CheckoutPageObjects.cvc, cvc);
+	}
+	
 }

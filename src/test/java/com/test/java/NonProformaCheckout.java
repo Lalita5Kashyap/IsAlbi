@@ -20,19 +20,19 @@ public class NonProformaCheckout extends BaseTest {
 	@Test(testName = "TC000 - Launch Application", description = "Launch Application Homepage", priority = 1)
 	public void LaunchApplication() {
 
-		LogInPage.SFLaunch("LaunchApplication");
+		LogInPage.SFLaunch("Checkout flow for Non-Proforma customer");
 	}
 
 	@Test(testName = "TC001 - Login", description = "Login", priority = 2)
 	public void LogInwithAccountNumberandPassword() {
 
-		LogInPage.SFLogin("LaunchApplication");
+		LogInPage.SFLogin("Checkout flow for Non-Proforma customer");
 	}
 
 	@Test(testName = "TC002 - Search SKU", description = "Search SKU", priority = 3)
 	public void SearchSKU() {
 
-		LogInPage.SearchProductSKU("LaunchApplication");
+		LogInPage.SearchProductSKU("Checkout flow for Non-Proforma customer");
 	}
 
 	@Test(testName = "TC003 - Add to cart product", description = "Add product", priority = 4)
