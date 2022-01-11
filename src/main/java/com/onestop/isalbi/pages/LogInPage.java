@@ -50,7 +50,7 @@ public class LogInPage extends Multimaplibraries {
 	public static void ClickonMiniCart() {
 		BrowserActions.isClick(HomePageObjects.minicarticon);
 		BrowserActions.isClick(HomePageObjects.vieweditcart);
-		BrowserActions.isSleep();
+		//BrowserActions.isSleep();
 	}
 
 }

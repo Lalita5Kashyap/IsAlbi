@@ -43,7 +43,7 @@ public class ProformaCheckout extends BaseTest {
 
 		ShoppingCartPage.ClickonProceedtoCheckout();
 	}
-	@Test(testName = "TC006 - Enter card details", description = "Card details entered", priority = 6)
+	@Test(testName = "TC006 - Enter card details", description = "Card details entered", priority = 7)
 	public void EnterCCDetails() {
 
 		CheckoutPage.FillCCDetails("Checkout flow for Proforma customer");

@@ -7,7 +7,8 @@ import com.onestop.isalbi.objects.ShoppingCartPageObjects;
 public class ShoppingCartPage {
 	
 	public static void ClickonProceedtoCheckout() {
-		BrowserActions.isClick(ShoppingCartPageObjects.vieweditcart);
-		BrowserActions.isSleep();
+		//BrowserActions.isSleep();
+		BrowserActions.isClick(ShoppingCartPageObjects.proceedtocheckout);
+		//BrowserActions.isSleep();
 }
 }

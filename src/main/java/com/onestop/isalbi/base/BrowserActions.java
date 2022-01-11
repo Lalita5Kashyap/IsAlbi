@@ -5,6 +5,7 @@ package com.onestop.isalbi.base;
 
 import org.openqa.selenium.WebDriver;
 
+
 /**
  * @author Lalita Kashyap
  *
@@ -85,5 +86,17 @@ public class BrowserActions extends SeleniumApis{
 	public static String isGetText(String locator) {
 		return getText(driver, "xpath", locator);
 		
+	}
+	public static void isFrameSwitch(String locator)
+	{
+		try {
+			SeleniumApis.switchFrame(locator);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+	public static void isdefaultFrameSwitch()
+	{
+		SeleniumApis.switchToDefaultFrame();
 	}
 }

@@ -18,7 +18,7 @@ public class IsAlbiConstants {
 	public static String TestData = System.getProperty("user.dir") + File.separator + "src" + File.separator
 			+ "test" + File.separator + "java" + File.separator + "com" + File.separator
 			+ "test" +  File.separator + "ISAlbi" + File.separator
-			+ "testData" + File.separator + "TestData.xls";
+			+ "testData" + File.separator + "TestData.xlsx";
 	
 	public static String TestDataOutput = System.getProperty("user.dir") + File.separator + "src"
 			+ File.separator + "test" + File.separator + "java" + File.separator + "com" + File.separator + "zanui"

@@ -16,6 +16,7 @@ import org.openqa.selenium.ElementNotVisibleException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.NoSuchFrameException;
 import org.openqa.selenium.NoSuchWindowException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.StaleElementReferenceException;
@@ -510,5 +511,40 @@ public class SeleniumApis {
 			break;
 		}
 		return text;
+	}
+	/*************************************************************************
+	 * Objective: To switch to the specified frame
+	 * Parameters: frameTitle (String)
+	 * Author: Lalita Kashyap
+	 * Updated by and when:
+	 * @throws InterruptedException 
+	 **************************************************************************/
+
+	public static void switchFrame(String locator) throws InterruptedException {
+		WebDriver driver = Constants.driver;
+		String[] locatorType = locator.split("#");
+		String path = locatorType[1];
+		try {
+			WebElement element=driver.findElement(By.xpath(path));
+			Thread.sleep(2000);
+			driver.switchTo().frame(element);
+		} catch (NoSuchFrameException e) {
+			e.printStackTrace();
+		}
+	}
+	/*************************************************************************
+	 * Objective: To switch to the default frame
+	 * Parameters: None
+	 * Author: Pooja Bagga
+	 * Updated by and when:
+	 **************************************************************************/
+
+	public static void switchToDefaultFrame() {
+		WebDriver driver = Constants.driver;
+		try {
+			driver.switchTo().defaultContent();
+		} catch (NoSuchFrameException e) {
+			e.printStackTrace();;
+		}
 	}
 }
