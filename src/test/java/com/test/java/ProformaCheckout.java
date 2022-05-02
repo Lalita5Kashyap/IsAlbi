@@ -15,7 +15,7 @@ public class ProformaCheckout extends BaseTest {
 		LogInPage.SFLaunch("Checkout flow for Proforma customer");
 	}
 
-	@Test(testName = "TC001 - Login", description = "Login", priority = 2)
+	/**@Test(testName = "TC001 - Login", description = "Login", priority = 2)
 	public void LogInwithAccountNumberandPassword() {
 
 		LogInPage.SFLogin("Checkout flow for Proforma customer");
@@ -47,6 +47,6 @@ public class ProformaCheckout extends BaseTest {
 	public void EnterCCDetails() {
 
 		CheckoutPage.FillCCDetails("Checkout flow for Proforma customer");
-	}
+	}**/
 
 }
